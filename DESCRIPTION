@@ -1,0 +1,16 @@
+Package: scgmt
+Type: Package
+Title: Integration and visualization of single cell rank-based gene set
+        enrichment analysis
+Version: 0.0.1
+Author: FangSheng
+Maintainer: FangSheng <fngseng12345@163.com>
+Description: Integrating multiple single cell rank-based gene set enrichment analysis together and multiple visual display methods.
+License: What license is it under?
+Encoding: UTF-8
+Imports: VISION, Seurat, BiocParallel, AUCell, GSEABase, GSVA, UCell,
+        singscore, magrittr, dplyr, tidyr, clusterProfiler, methods,
+        purrr, reshape2, stringr, ggplot2, pheatmap, ggridges, viridis
+RoxygenNote: 7.1.2
+NeedsCompilation: no
+Packaged: 2023-08-24 07:56:02 UTC; Admin
