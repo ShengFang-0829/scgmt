@@ -25,3 +25,7 @@ Before installing the scgmt package, you need to install the following dependent
   ggridges,
   viridis
 ~~~
+
+~~~
+devtools::install_github("ShengFang-0829/scgmt")
+~~~
