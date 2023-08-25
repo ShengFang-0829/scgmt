@@ -46,7 +46,7 @@ rds <- pbmc3k.final
 library(scgmt)
 # Just provide the gmt file path for storing the gene list for each signaling pathway.
 # The gmt file in the example was obtained from this website address:https://www.gsea-msigdb.org/gsea/msigdb/index.jsp
-signatures <- "/data_disk/ST01/User/fangsheng/scgmt/h.all.v2023.1.Hs.symbols.gmt"
+signatures <- "h.all.v2023.1.Hs.symbols.gmt"
 
 # Single cell rank-based gene set enrichment analysis methods integration in the scgmt function.
 # The current methods include:"AUCell","UCell","AddModuleScore","gsva","ssgsea","zscore","plage","VISION","JAS_likelihood","JAS_oddsratio" and "singscore".Fill in using the method parameter.
@@ -61,7 +61,8 @@ colnames(rds1@meta.data)
 
 # Visualization
 Visualization includes the following functions:   
-scgmt_line_plot     
+scgmt_line_plot   
+scgmt_merge_line_plot       
 scgmt_heatmap_plot  
 scgmt_scatter_plot  
 scgmt_ridges_plot   
