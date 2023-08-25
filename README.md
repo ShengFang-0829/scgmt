@@ -86,3 +86,6 @@ print(p5)
 p6 <- scgmt_density_plot(rds1,signature="HALLMARK_HYPOXIA")
 print(p6)
 ~~~
+
+## Contact information
+For any questions please contact fngseng12345@163.com or https://github.com/ShengFang-0829/scgmt/issues
