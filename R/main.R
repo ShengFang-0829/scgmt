@@ -679,8 +679,9 @@ scgmt <- function(rds,slot=NULL,assay=NULL,chunk.size=1000,signatures,BPPARAM=NU
 #'
 
 scgmt_line_plot <- function(object,signatures,group.by=NULL,x.lab.title=NULL,y.lab.title=NULL,face=NULL,line.size=1.2){
+  checkobject <- methods::is(object)=="Seurat"
 
-  if (methods::is(object)=="Seurat"){
+  if (checkobject[1]){
     meta <- object@meta.data
   } else if (class(object)=="data.frame"){
     meta <- object
@@ -908,7 +909,7 @@ scgmt_ridges_plot <- function(rds,signature,group.by="ident"){
 #'
 #'
 
-scgmt_density_plot <- function(rds,signature,group.by="ident",cols, alpha=0.7){
+scgmt_density_plot <- function(rds,signature,group.by="ident",cols=NULL, alpha=0.7){
 
   rds$ident <- rds@active.ident
   meta <- rds@meta.data
@@ -918,6 +919,9 @@ scgmt_density_plot <- function(rds,signature,group.by="ident",cols, alpha=0.7){
   colnames(data) <- c("y","x")
   font1 <- 10
   textSize <- 10
+  if (is.null(cols)){
+    cols <- scales::hue_pal()(length(unique(meta$y)))
+  }
   p1 <- ggplot2::ggplot(data, aes(x = x))+ geom_density(aes(fill = y,color =y), alpha=alpha) +
     scale_fill_manual(values=cols) +
     scale_color_manual(values=cols) +
