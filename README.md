@@ -61,11 +61,11 @@ colnames(rds1@meta.data)
 
 # Visualization
 Visualization includes the following functions:
-scgmt_line_plot
-scgmt_heatmap_plot
-scgmt_scatter_plot
-scgmt_ridges_plot
-scgmt_density_plot
+scgmt_line_plot 
+scgmt_heatmap_plot  
+scgmt_scatter_plot  
+scgmt_ridges_plot 
+scgmt_density_plot  
 ~~~
 p1 <- scgmt_line_plot(rds1,signatures="HALLMARK_HYPOXIA",group.by="orig.ident")
 print(p1)
