@@ -920,7 +920,7 @@ scgmt_density_plot <- function(rds,signature,group.by="ident",cols=NULL, alpha=0
   font1 <- 10
   textSize <- 10
   if (is.null(cols)){
-    cols <- scales::hue_pal()(length(unique(meta$y)))
+    cols <- scales::hue_pal()(length(unique(data$y)))
   }
   p1 <- ggplot2::ggplot(data, aes(x = x))+ geom_density(aes(fill = y,color =y), alpha=alpha) +
     scale_fill_manual(values=cols) +

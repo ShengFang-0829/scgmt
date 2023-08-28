@@ -30,7 +30,7 @@ Install scgmt package:
 ~~~
 devtools::install_github("ShengFang-0829/scgmt")
 ~~~
-## Usage
+# Usage
 Here, we use the pbmc3k dataset that comes with SeuratData.
 
 # Prepare Data
