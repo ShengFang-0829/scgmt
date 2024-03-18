@@ -102,6 +102,10 @@ rds2 <- scgmt_hierarchy(rds1,signatures=signature)
 scgmt_hierarchy_plot(rds=rds2)
 ~~~
 
+This method is referenced from:
+
+[1] Abdelfattah N , Kumar P , Wang C ,et al.Single-cell analysis of human glioma and immune cells identifies S100A4 as an immunotherapy target[J].Nature Communications, 2022, 13.DOI:10.1038/s41467-022-28372-y.
+
 ## Update Plan
 
 We will adapt to seuratV5 objects in the future
