@@ -11,6 +11,7 @@ scgmt_heatmap_plot(
   cluster_cols = FALSE,
   cluster_rows = FALSE,
   scale = "row",
+  heatmapfont = 20,
   group.order = NULL,
   pathway.order = NULL,
   heat_col = NULL,

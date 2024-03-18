@@ -67,6 +67,7 @@ scgmt_heatmap_plot
 scgmt_scatter_plot  
 scgmt_ridges_plot   
 scgmt_density_plot  
+
 ~~~
 p1 <- scgmt_line_plot(rds1,signatures="HALLMARK_HYPOXIA",group.by="orig.ident")
 print(p1)
@@ -87,5 +88,24 @@ p6 <- scgmt_density_plot(rds1,signature="HALLMARK_HYPOXIA")
 print(p6)
 ~~~
 
+## New Function
+
+hierarchy function:
+
+After calculating the score of the gene set, you can choose four signatures for calculation, which will divide cells according to the height of the four pathways according to the calculation method.
+
+~~~
+#After calculating the score of the gene set, you can choose four signatures for calculation
+signature = c("Pro_inflammatory","Immune_regulatory","Proliferating_cells","Pro_angiogenic")
+rds2 <- scgmt_hierarchy(rds1,signatures=signature)
+#Visualization
+scgmt_hierarchy_plot(rds=rds2)
+~~~
+
+## Update Plan
+
+We will adapt to seuratV5 objects in the future
+
 ## Contact information
+
 For any questions please contact fngseng12345@163.com or https://github.com/ShengFang-0829/scgmt/issues

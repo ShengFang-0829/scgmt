@@ -4,7 +4,13 @@
 \alias{scgmt_density_plot}
 \title{scgmt_density_plot}
 \usage{
-scgmt_density_plot(rds, signature, group.by = "ident", cols, alpha = 0.7)
+scgmt_density_plot(
+  rds,
+  signature,
+  group.by = "ident",
+  cols = NULL,
+  alpha = 0.7
+)
 }
 \arguments{
 \item{rds}{seurat object}
