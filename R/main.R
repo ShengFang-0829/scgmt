@@ -1330,7 +1330,7 @@ scgmt_hierarchy_plot <-
 
 
     if (!is.null(cols)) {
-      if (is.character(dat$group.by)) {
+      if (!is.numeric(dat$group.by[1])) {
         p <- p +  scale_color_manual(values = cols)
       } else {
         if (length(cols) == 2) {
