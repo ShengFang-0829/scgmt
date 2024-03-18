@@ -105,6 +105,7 @@ scgmt_hierarchy_plot(rds=rds2)
 This method is referenced from:
 
 [1] Abdelfattah N , Kumar P , Wang C ,et al.Single-cell analysis of human glioma and immune cells identifies S100A4 as an immunotherapy target[J].Nature Communications, 2022, 13.DOI:10.1038/s41467-022-28372-y.
+[2] Neftel C , Laffy J , Filbin M G ,et al.An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma[J].Cell, 2019, 178(4).DOI:10.1016/j.cell.2019.06.024.
 
 ## Update Plan
 
